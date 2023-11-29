@@ -4,7 +4,7 @@ type Nike struct {
 }
 
 func (a *Nike) MakeShoe() IShoe {
-	return &AdidasShoe{
+	return &NikeShoe{
 		Shoe: Shoe{
 			Logo: "Nike",
 			Size: 14,
@@ -13,7 +13,7 @@ func (a *Nike) MakeShoe() IShoe {
 }
 
 func (a *Nike) MakeShirt() IShirt {
-	return &AdidasShirt{
+	return &NikeShirt{
 		Shirt: Shirt{
 			Logo: "Nike",
 			Size: 14,
